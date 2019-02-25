@@ -1,0 +1,14 @@
+Description: upstream wants to paint the cursor manually but it doesn't handle IME, disable for now
+Author: ghost <i@ghosts.work>
+Last-Update: 2018-10-14
+--- a/src/MarkdownEditor.cpp
++++ b/src/MarkdownEditor.cpp
+@@ -86,7 +86,7 @@
+     this->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+     
+     // Make sure QPlainTextEdit does not draw a cursor.  (We'll paint it manually.)
+-    setCursorWidth(0);
++    //setCursorWidth(0);
+     
+     setCenterOnScroll(true);
+     ensureCursorVisible();

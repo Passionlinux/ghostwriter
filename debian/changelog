@@ -1,0 +1,14 @@
+ghostwriter (1.7.4-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian/control: add suggestions cmark, discount, pandoc, wkhtmltopdf.
+    (Closes: #917243)
+  * removal spelling.patch
+
+ -- Sebastien CHAVAUX <seb95.scou@gmail.com>  Tue, 25 Dec 2018 19:46:52 +0100
+
+ghostwriter (1.7.3-1) unstable; urgency=medium
+
+  * New package. (Closes: #894260)
+
+ -- ghost <i@ghosts.work>  Sun, 14 Oct 2018 11:25:00 +0000

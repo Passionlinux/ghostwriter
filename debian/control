@@ -1,0 +1,32 @@
+Source: ghostwriter
+Section: editors
+Priority: optional
+Maintainer: Sebastien CHAVAUX <seb95.scou@gmail.com>
+Uploaders: ghost <i@ghosts.work>
+Build-Depends: debhelper (>= 11),
+		qtbase5-dev,
+		qtmultimedia5-dev,
+		libqt5webkit5-dev,
+		libhunspell-dev,
+		pkg-config,
+		qttools5-dev-tools
+Standards-Version: 4.3.0
+Homepage: https://wereturtle.github.io/ghostwriter/
+Vcs-Git: https://gitlab.com/ghostwriter-deb.git -b master
+Vcs-Browser: https://gitlab.com/ghostwriter-deb/ghostwriter-deb
+
+Package: ghostwriter
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Suggests: hunspell-dictionary, myspell-dictionary, cmark, discount, pandoc, wkhtmltopdf
+Description: Distraction-free, themeable Markdown editor
+ ghostwriter is a Markdown editor that provides a themable,
+ distraction-free writing environment, along with a live HTML
+ preview as you type, easy document navigation with an outline HUD,
+ and export to popular document formats with Sundown, Pandoc,
+ MultiMarkdown, Discount, cmark, or cmark-gfm processors.  It also
+ features a live word count and auto-save. Eliminate distractions in
+ fullscreen mode, or concentrate on the current text you are writing
+ in focus mode.  It even remembers your last opened file and position
+ within the file, so you can pick up where you last left off.

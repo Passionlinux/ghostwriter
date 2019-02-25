@@ -1,0 +1,14 @@
+Description: dpkg-shlibdeps says it's a useless dependency
+Author: ghost <i@ghosts.work>
+Last-Update: 2018-10-10
+--- a/ghostwriter.pro
++++ b/ghostwriter.pro
+@@ -28,7 +28,7 @@
+ 
+ TEMPLATE = app
+ 
+-QT += printsupport webkitwidgets widgets concurrent svg
++QT += printsupport webkitwidgets widgets concurrent
+ 
+ CONFIG -= debug
+ CONFIG += warn_on
